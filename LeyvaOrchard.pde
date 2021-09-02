@@ -132,11 +132,8 @@ arc(width/9*8.5, height/3,width/18,7, PI, TWO_PI);
   line(width/9*7, height/3, width, height/2-20);
   line(width/9*8, height/3, width, height/2.6);
   line(width/9, height/3, 0, height/2.6);
-  //cross
-   
   
-  line(0, height/2+10, width, height/2+10);
-  line(0, 450, width, 450);
+
 //Heighest trees
   h1.update();
   h2.update();
@@ -192,8 +189,16 @@ arc(width/9*8.75+6, yposa+40,width/18+20,6, PI, TWO_PI);
   t6.update();
   t7.update();
    t5.update();
- 
-
+     stroke(#B9B111);
+  strokeWeight(4); 
+  fill(#4A9D08); 
+   arc(width/9-47, ypos+20,width/18+21,12, PI, TWO_PI);
+    arc(width/9*2+2, ypos+20,width/18+30,12, PI, TWO_PI);
+ arc(width/9*3.5+20, ypos+20,width/18+30,12, PI, TWO_PI);
+  arc(width/9*5+27, ypos+20,width/18+25,12, PI, TWO_PI);
+  arc(width/9*6.5+35, ypos+20,width/18+38,12, PI, TWO_PI);
+  arc(width/9*8.5+20, ypos+20,width/18+38,12, PI, TWO_PI);
+  
   r1.update();
   r2.update();
   r3.update();
@@ -237,9 +242,9 @@ class HLine {
     fill(#155808);
     ellipse(xpos, yposa-29, 11, 11);
     fill(#29741B);
-    ellipse(xpos-10, yposa-20, 11, 11);
+    ellipse(xpos-10, yposa-20, 9, 9);
     fill(#0F6422);
-    ellipse(xpos+10, yposa-17, 10, 10);
+    ellipse(xpos+8, yposa-17, 11, 11);
     fill(#F7432F);//apples
     ellipse(xpos+6, yposa-32, 2, 2);
     ellipse(xpos+9, yposa-18, 2, 2);
@@ -286,9 +291,23 @@ class TLine {
     if (xpos > width+167) {
       xpos = -100;
     }
-    fill (255);
-    stroke(0);
-    ellipse(xpos, ypos-35, 45, 45);
+
+    noStroke();
+    fill(#644624);
+    rect(xpos, ypos-8, 20, 55);
+    fill(#155808);
+    ellipse(xpos, ypos-60, 30, 30);
+    fill(#29741B);
+    ellipse(xpos-28, ypos-44, 27, 27);
+    fill(#0F6422);
+    ellipse(xpos+25, ypos-35, 32, 32);
+    fill(#F7432F);
+    ellipse(xpos+45, ypos-35, 8, 8);
+    ellipse(xpos+26, ypos-22, 8, 8);
+    ellipse(xpos+15, ypos-75, 8, 8);
+    ellipse(xpos-40, ypos-52.5, 8, 8);
+
+    
   }
 }
 class treeLine {
@@ -311,11 +330,11 @@ class treeLine {
       fill(#644624);
     rect(xpos, ypos2, 30, 96);
     fill(#155808);
-    ellipse(xpos, ypos2-80, 55, 55);
+    ellipse(xpos, ypos2-80, 50, 50);
     fill(#29741B);
     ellipse(xpos-42, ypos2-44, 50, 50);
     fill(#0F6422);
-    ellipse(xpos+43, ypos2-40, 50, 50);
+    ellipse(xpos+43, ypos2-40, 42, 42);
     fill(#F7432F);
     ellipse(xpos+60, ypos2-30, 10, 10);
     ellipse(xpos+26, ypos2-22, 8, 8);
